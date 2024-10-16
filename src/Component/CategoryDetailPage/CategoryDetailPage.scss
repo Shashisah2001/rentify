@@ -1,0 +1,146 @@
+$primary-color: #f8c617;
+$secondary-color: #252c37;
+$background-color: #f7fcff;
+$button-hover-color: darken($primary-color, 10%);
+$border-radius: 5px;
+
+.category-detail-page {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: $background-color;
+  font-family: Arial, sans-serif;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: $secondary-color;
+  }
+
+  .go-back {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+
+  .no-products {
+    text-align: center;
+    h2 {
+      margin-top: 10px;
+      color: $secondary-color;
+    }
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+  }
+}
+
+.product-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .product-image-carousel {
+    position: relative;
+
+    .product-image {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+    }
+
+    .image-nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      gap: 10px;
+
+      button {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+        padding: 5px 10px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: $secondary-color;
+  }
+
+  .product-price {
+    font-size: 1.1rem;
+    color: $primary-color;
+    margin: 5px 0;
+  }
+
+  .product-rating {
+    font-size: 1rem;
+    color: #ffcc00; 
+    margin: 5px 0;
+  }
+
+  .product-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .cart-btn {
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: $border-radius;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $button-hover-color;
+      }
+    }
+
+    button {
+      background-color: #e0e0e0;
+      border: none;
+      border-radius: $border-radius;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken(#e0e0e0, 10%);
+      }
+    }
+  }
+}

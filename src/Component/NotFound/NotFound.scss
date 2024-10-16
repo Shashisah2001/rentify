@@ -1,0 +1,18 @@
+.notfound-container {
+  padding-top: 50px;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100vh;
+
+  .not-found-img {
+    display: flex;
+    align-items: center;
+    margin-left: 50vh;
+  }
+
+  .notfound-h1 {
+    color: #f0a400;
+    text-align: center;
+    font-size: 2rem;
+  }
+}

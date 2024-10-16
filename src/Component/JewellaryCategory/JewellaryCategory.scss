@@ -1,0 +1,104 @@
+.jewellary-category-content {
+  margin-top: 60px;
+  background-color: #f8f9fa;
+  height: auto;
+  width: 100%;
+
+  .jewellary-h1-content {
+    color: #2c3e50;
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+  }
+
+  .item-links {
+    text-align: center;
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+    }
+
+    .item-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      .item {
+        padding: 10px;
+        font-size: 1.2rem;
+        text-decoration: none;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        a {
+          color: #2c3e50;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .jewellary-content-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: auto;
+    padding: 20px;
+  }
+
+  .jewellary-category-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 4 / 3;
+      border-radius: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #333;
+    }
+
+    .jewellary-category-buttons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      button {
+        padding: 8px 16px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #ffffff;
+        background-color: #2c3e50;
+
+        &:hover {
+          background-color: #f0a400;
+        }
+      }
+    }
+  }
+}

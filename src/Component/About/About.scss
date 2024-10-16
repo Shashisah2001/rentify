@@ -1,0 +1,157 @@
+.main-div {
+  background-color: #fbf5df;
+  color: #505052;
+
+  .about-h1 {
+    padding-top: 65px;
+    color: #505052;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-container {
+    background: linear-gradient(135deg, #fff1e6 0%, #fbf5df 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 40px 20px;
+    color: #505052;
+    flex-wrap: wrap;
+
+    .about-content {
+      max-width: 50%;
+      margin-right: 20px;
+
+      .content-p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        text-align: justify;
+        color: #505052;
+
+        strong {
+          color: #f0a400;
+        }
+      }
+
+      h1 {
+        font-size: 1.9rem;
+        margin-bottom: 15px;
+        color: #f0a400;
+      }
+    }
+
+    .image-overlay {
+      position: relative;
+      max-width: 40%;
+      height: 65%;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .overlay-text {
+        position: absolute;
+        bottom: 10%;
+        left: 20%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 20px;
+
+      .about-content {
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .image-overlay {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .cta-button {
+    background-color: #f0a400;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #f7f7f7;
+  }
+
+  .cta-button:hover {
+    background-color: #e08900;
+  }
+
+  .mission-section {
+    background-color: #d0d0d0;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+
+    h2 {
+      font-size: 1.5rem;
+      color: #f0a400;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #505052;
+    }
+
+    .trust-badges {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+
+      .badge {
+        text-align: center;
+        max-width: 120px;
+
+        img {
+          max-width: 50px;
+          height: auto;
+        }
+
+        p {
+          font-size: 0.9rem;
+          margin-top: 10px;
+          color: #505052;
+        }
+      }
+    }
+  }
+
+  .contact-section {
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+
+    h2 {
+      font-size: 1.5rem;
+      color: #f0a400;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #505052;
+    }
+  }
+}
